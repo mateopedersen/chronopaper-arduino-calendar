@@ -1,7 +1,6 @@
 https://github.com/mateopedersen/chronopaper-arduino-calendar
 https://mateopedersen.github.io/chronopaper-arduino-calendar/
 https://mateopedersen.github.io/chronopaper-arduino-calendar/web-demo/
-https://projecthub.arduino.cc/projects/ebda8d05-057a-488d-a7eb-bda5279ee0e3/edit
 https://www.betacalendars.com/
 https://www.betacalendars.com/monthly-calendar
 https://www.betacalendars.com/blank-calendar

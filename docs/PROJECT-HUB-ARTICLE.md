@@ -2,7 +2,7 @@
 
 **Build an interactive electronic desk calendar with reliable date calculations, offline operation and optional printable month references.**
 
-> **Project status: work in progress.** This publication documents a complete design and software implementation in progress. No physical prototype is available for photographs or bench measurements, and the complete Arduino sketch has not yet been compiled or tested on hardware. The wiring drawing is a proposed connection reference. Do not treat it as evidence of an assembled circuit.
+> **Project status: work in progress.** The firmware has compiled for the Arduino Nano ESP32 target and the native calendar tests pass. No physical prototype is available for photographs or bench measurements, and the sketch has not been uploaded to a board or tested with the specified panel. The wiring drawing is a proposed connection reference. Do not treat it as evidence of an assembled circuit.
 
 ## Introduction
 
@@ -112,7 +112,7 @@ g++ -std=c++17 -Wall -Wextra -Werror -Ifirmware/ChronoPaper \
 /tmp/chronopaper-calendar-tests
 ```
 
-These tests exercise pure date logic only. They do not compile the ESP32 firmware, test the display or validate the adapter. The Arduino target build, QR scan, panel refresh, actual RTC reset and Wi-Fi behavior must be checked after obtaining the components and installing the specified toolchain. Record those results before changing the work-in-progress status.
+These tests exercise pure date logic only. Separately, the Arduino sketch was compiled for the Nano ESP32 target; compilation does not test the display or validate the adapter. QR scan, panel refresh, actual RTC reset and Wi-Fi behavior must be checked on hardware. Record those results before changing the work-in-progress status.
 
 ## Troubleshooting
 
@@ -126,7 +126,7 @@ These tests exercise pure date logic only. They do not compile the ESP32 firmwar
 
 ## Limitations and future work
 
-This is a software and wiring design in progress, not a photographed build. The complete firmware has not been compiled for the Arduino Nano ESP32 in this environment, and no device-level validation exists. The current firmware's year is constrained by its compact signed 16-bit representation. Wi-Fi reconnect policy, alternate panel revisions, enclosure design, accessibility controls, measured refresh behavior and low-power measurements are future work. A real maker build should document the exact purchased panel revision and capture its own assembly and test evidence.
+This is a software and wiring design in progress, not a photographed build. The firmware compiles for the Arduino Nano ESP32 with Arduino CLI 1.5.1, Arduino ESP32 core 2.0.18-arduino.5 and the listed dependencies, but no device-level validation exists. The calendar engine accepts years 1–9999; the date structure stores years in a signed 16-bit field. Wi-Fi reconnect policy, alternate panel revisions, enclosure design, accessibility controls, measured refresh behavior and low-power measurements are future work. A real maker build should document the exact purchased panel revision and capture its own assembly and test evidence.
 
 ## Open source and attribution
 

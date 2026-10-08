@@ -2,7 +2,7 @@
 
 ChronoPaper is a proposed open-hardware desk calendar built around the Arduino Nano ESP32 and the 4.2-inch Good Display GDEY042T81 panel. It combines an offline date-only Gregorian engine, optional network time, an optional DS3231 backup clock, several e-paper views, three physical controls, and a local read-only page that opens year-matched printable calendar references.
 
-> **Build status: work in progress.** The source, resource manifest, interface demo, wiring reference, and testable calendar engine are prepared. No assembled device is available in this workspace. The complete firmware has not been compiled against the Arduino toolchain or tested on the specified board and panel. Treat the wiring illustration as a proposed connection plan; check the exact panel revision and adapter documentation before powering hardware.
+> **Build status: work in progress.** The source, resource manifest, interface demo, wiring reference, and testable calendar engine are prepared. No assembled device is available in this workspace. The firmware compiled for Arduino Nano ESP32 FQBN `arduino:esp32:nano_nora` using Arduino CLI 1.5.1, official Arduino ESP32 core 2.0.18-arduino.5, GxEPD2 1.6.9, Adafruit GFX 1.12.6, Adafruit BusIO 1.17.4 and RTClib 2.1.4. The MIT QRCode C source is vendored in the sketch. Compile success does not mean it has been uploaded or tested on a physical board and panel. Treat the wiring illustration as a proposed connection plan; check the exact panel revision and adapter documentation before powering hardware.
 
 ## What it does
 

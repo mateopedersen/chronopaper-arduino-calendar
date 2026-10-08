@@ -89,7 +89,7 @@ Then open `http://localhost:8000`. Select a month and year; use left/right arrow
 
 ## Verification and limitations
 
-The date engine is designed to be compiled and tested natively with the included `tests/calendar-tests/test_calendar.cpp`; see `docs/VERIFICATION.md` for the actual run record. This is not a substitute for compiling the complete Arduino sketch or testing SPI refresh, QR readability, RTC recovery, Wi-Fi reconnection, mDNS, enclosure fit, or power draw on hardware. Those remain open build tasks. No physical-project photographs are included; the 1600×1000 cover image and interface demo are explicitly labeled illustrative. The compiled sketch uses 603,293 bytes of program storage (19%) and 53,056 bytes of global memory (16%) for the selected core and board settings.
+The date engine is tested natively with the included `tests/calendar-tests/test_calendar.cpp`; see `docs/VERIFICATION.md` for the run record. The complete Arduino sketch also compiles for Nano ESP32. Neither software check substitutes for testing SPI refresh, QR readability, RTC recovery, Wi-Fi reconnection, mDNS, enclosure fit, or power draw on physical hardware. No physical-project photographs are included; the 1600×1000 cover image and interface demo are explicitly labeled illustrative. The compiled sketch uses 603,293 bytes of program storage (19%) and 53,056 bytes of global memory (16%) for the selected core and board settings.
 
 ## Source repository
 

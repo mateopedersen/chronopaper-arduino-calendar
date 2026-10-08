@@ -91,6 +91,10 @@ Then open `http://localhost:8000`. Select a month and year; use left/right arrow
 
 The date engine is designed to be compiled and tested natively with the included `tests/calendar-tests/test_calendar.cpp`; see `docs/VERIFICATION.md` for the actual run record. This is not a substitute for compiling the complete Arduino sketch or testing SPI refresh, QR readability, RTC recovery, Wi-Fi reconnection, mDNS, enclosure fit, or power draw on hardware. Those remain open build tasks. No physical-project photographs are included; the interface demo is explicitly labeled illustrative.
 
+## Source repository
+
+Public project source: [mateopedersen/chronopaper-arduino-calendar](https://github.com/mateopedersen/chronopaper-arduino-calendar). The static demo can be hosted from this repository; no separate deployment is implied by this link.
+
 ## Upstream references
 
 - [Arduino Nano ESP32 product page](https://store.arduino.cc/products/nano-esp32)

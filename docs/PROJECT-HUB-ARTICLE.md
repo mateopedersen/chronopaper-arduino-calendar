@@ -130,4 +130,4 @@ This is a software and wiring design in progress, not a photographed build. The 
 
 ## Open source and attribution
 
-The project files are released under the MIT License. Libraries retain their upstream licenses. The printable pages are third-party resources published by Beta Calendars. ChronoPaper's calendar calculations, firmware and interface are independent project code and remain useful if all external resources are removed.
+The project source and downloadable files are in the [ChronoPaper GitHub repository](https://github.com/mateopedersen/chronopaper-arduino-calendar). The project files are released under the MIT License. Libraries retain their upstream licenses. The printable pages are third-party resources published by Beta Calendars. ChronoPaper's calendar calculations, firmware and interface are independent project code and remain useful if all external resources are removed.

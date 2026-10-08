@@ -17,9 +17,9 @@ void onSntpSync(struct timeval *) { sntpCallbackSeen = true; }
 bool TimeManager::begin(const char *posixTimezone) {
   setenv("TZ", posixTimezone && *posixTimezone ? posixTimezone : "UTC0", 1);
   tzset();
+  esp_sntp_set_time_sync_notification_cb(onSntpSync);
   configTzTime(posixTimezone && *posixTimezone ? posixTimezone : "UTC0",
                "pool.ntp.org", "time.nist.gov", "time.google.com");
-  esp_sntp_set_time_sync_notification_cb(onSntpSync);
   ntpStarted_ = true;
   Wire.begin(); // Nano ESP32 defaults to A4/SDA and A5/SCL.
   rtcReady_ = rtc.begin();

@@ -51,7 +51,7 @@ The Arduino sketch divides responsibilities into small modules:
 - `ResourceLinks` maps verified month/year pairs to their printable destinations and returns unavailable for all other dates.
 - `WebCompanion` starts a small read-only HTTP server on the local network after Wi-Fi connects. It does not implement public internet access, authentication or remote control.
 
-The source lists GxEPD2, Adafruit GFX, Adafruit BusIO, RTClib and QRCode, plus facilities bundled with the selected Nano ESP32 core. The firmware targets the Arduino Nano ESP32 board package. Since that board package and the actual Arduino toolchain were not installed in this workspace, a full target compile remains outstanding. The host C++ calendar-engine checks do not prove target compatibility.
+The source lists GxEPD2, Adafruit GFX, Adafruit BusIO, RTClib and QRCode, plus facilities bundled with the selected Nano ESP32 core. The firmware targets the Arduino Nano ESP32 board package. Since that board package and the actual Arduino toolchain were not installed in this workspace, a full target compile remains outstanding. The Arduino Nano ESP32 firmware has been compiled successfully with Arduino CLI 1.5.1, official Arduino ESP32 core 2.0.18-arduino.5 and the listed library versions. This compile result does not prove hardware compatibility.
 
 ## Building a Gregorian calendar engine
 
@@ -130,4 +130,4 @@ This is a software and wiring design in progress, not a photographed build. The 
 
 ## Open source and attribution
 
-The project source and downloadable files are in the [ChronoPaper GitHub repository](https://github.com/mateopedersen/chronopaper-arduino-calendar). The project files are released under the MIT License. Libraries retain their upstream licenses. The printable pages are third-party resources published by Beta Calendars. ChronoPaper's calendar calculations, firmware and interface are independent project code and remain useful if all external resources are removed.
+The project source and downloadable files are in the [ChronoPaper GitHub repository](https://github.com/mateopedersen/chronopaper-arduino-calendar) and the [live browser demo](https://mateopedersen.github.io/chronopaper-arduino-calendar/web-demo/). The project files are released under the MIT License. Libraries retain their upstream licenses. The printable pages are third-party resources published by Beta Calendars. ChronoPaper's calendar calculations, firmware and interface are independent project code and remain useful if all external resources are removed.

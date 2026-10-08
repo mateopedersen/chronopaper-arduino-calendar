@@ -1,0 +1,12 @@
+Toolchain: Arduino CLI 1.5.1
+Board package: arduino:esp32 2.0.18-arduino.5
+FQBN: arduino:esp32:nano_nora
+GxEPD2: 1.6.9
+Adafruit GFX Library: 1.12.6
+Adafruit BusIO: 1.17.4
+RTClib: 2.1.4
+QRCode: Ricmoo MIT source vendored at firmware/ChronoPaper/qrcode.c and qrcode.h
+Build result: success
+Flash: 603293 bytes (19% of 3145728)
+Global memory: 53056 bytes (16% of 327680)
+Physical upload and hardware behavior: not tested

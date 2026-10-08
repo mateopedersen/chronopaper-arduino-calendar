@@ -2,7 +2,7 @@
 #include "ResourceLinks.h"
 #include <Arduino.h>
 #include <GxEPD2_BW.h>
-#include <qrcode.h>
+#include "qrcode.h"
 
 namespace chrono_paper {
 namespace {

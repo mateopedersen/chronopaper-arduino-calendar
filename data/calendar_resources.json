@@ -1,0 +1,22 @@
+{
+  "title": "ChronoPaper verified monthly printable references",
+  "schema_version": 1,
+  "verification_date": "2026-10-08",
+  "scope": "Direct monthly pages whose page titles identify the matching year, from October 2026 through September 2027.",
+  "publisher": "Beta Calendars",
+  "resources": [
+    {"year":2026,"month":10,"display_name":"October 2026 calendar","url":"https://www.betacalendars.com/october-calendar.html","status":"verified"},
+    {"year":2026,"month":11,"display_name":"November 2026 calendar","url":"https://www.betacalendars.com/november-calendar.html","status":"verified"},
+    {"year":2026,"month":12,"display_name":"December 2026 calendar","url":"https://www.betacalendars.com/december-calendar.html","status":"verified"},
+    {"year":2027,"month":1,"display_name":"January 2027 calendar","url":"https://www.betacalendars.com/january-calendar.html","status":"verified"},
+    {"year":2027,"month":2,"display_name":"February 2027 calendar","url":"https://www.betacalendars.com/february-calendar.html","status":"verified"},
+    {"year":2027,"month":3,"display_name":"March 2027 calendar","url":"https://www.betacalendars.com/march-calendar.html","status":"verified"},
+    {"year":2027,"month":4,"display_name":"April 2027 calendar","url":"https://www.betacalendars.com/april-calendar.html","status":"verified"},
+    {"year":2027,"month":5,"display_name":"May 2027 calendar","url":"https://www.betacalendars.com/may-calendar.html","status":"verified"},
+    {"year":2027,"month":6,"display_name":"June 2027 calendar","url":"https://www.betacalendars.com/june-calendar.html","status":"verified"},
+    {"year":2027,"month":7,"display_name":"July 2027 calendar","url":"https://www.betacalendars.com/july-calendar.html","status":"verified"},
+    {"year":2027,"month":8,"display_name":"August 2027 calendar","url":"https://www.betacalendars.com/august-calendar.html","status":"verified"},
+    {"year":2027,"month":9,"display_name":"September 2027 calendar","url":"https://www.betacalendars.com/september-calendar.html","status":"verified"}
+  ],
+  "fallback_policy": "Do not offer a year-mismatched month URL. Show unavailable until a matching page is checked and added."
+}

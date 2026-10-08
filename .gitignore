@@ -1,0 +1,6 @@
+firmware/ChronoPaper/secrets.h
+.DS_Store
+*.o
+*.elf
+*.bin
+build/

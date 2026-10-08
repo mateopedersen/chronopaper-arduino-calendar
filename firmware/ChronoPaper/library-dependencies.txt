@@ -1,0 +1,7 @@
+Arduino board package: Arduino Nano ESP32 (official Arduino board manager package; select the exact installed release in Arduino IDE)
+GxEPD2 by Jean-Marc Zingg — https://github.com/ZinggJM/GxEPD2
+Adafruit GFX Library — https://github.com/adafruit/Adafruit-GFX-Library
+Adafruit BusIO (GFX dependency) — https://github.com/adafruit/Adafruit_BusIO
+Adafruit RTClib (optional DS3231) — https://github.com/adafruit/RTClib
+QRCode by Richard Moore — https://github.com/ricmoo/QRCode
+ESP32 Preferences, WiFi, WebServer, ESPmDNS, ESP SNTP — bundled with the selected Arduino Nano ESP32 core

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Try ChronoPaper's date-only Gregorian calendar engine and browse verified printable references from October 2026 through September 2027.">
+  <title>ChronoPaper — Calendar Engine Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ChronoPaper home"><span class="brand-mark">CP</span><span>CHRONOPAPER <small>ENGINEERING DEMO</small></span></a>
+    <a class="repo-link" href="../README.md" rel="noopener noreferrer" target="_blank">Source repository <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">DATE-ONLY GREGORIAN ENGINE / LOCAL DEMONSTRATION</p>
+      <h1>A calendar is a small piece of date mathematics.</h1>
+      <p>Explore the same month and week calculations used by the ChronoPaper firmware. This browser demo is not connected to a device and makes no network calls except when you choose a printable reference.</p>
+    </section>
+
+    <section class="workbench" aria-labelledby="calendar-heading">
+      <div class="controls" aria-label="Calendar controls">
+        <button id="previous" class="icon-button" type="button" aria-label="Previous month">←</button>
+        <label>Month<select id="month" aria-label="Month"></select></label>
+        <label>Year<input id="year" type="number" min="1" max="9999" value="2027" aria-label="Year"></label>
+        <button id="next" class="icon-button" type="button" aria-label="Next month">→</button>
+        <label class="switch-label"><input id="monday" type="checkbox" checked> Monday first</label>
+        <label class="switch-label"><input id="iso" type="checkbox" checked> ISO week numbers</label>
+      </div>
+
+      <div class="content-grid">
+        <section class="device" aria-labelledby="calendar-heading">
+          <div class="device-shell">
+            <div class="screen">
+              <div class="screen-top"><span>CHRONOPAPER / DESK VIEW</span><span id="mode-label">OFFLINE DEMO</span></div>
+              <div class="screen-title"><div><h2 id="calendar-heading">January</h2><span id="year-label">2027</span></div><span class="screen-date" id="selected-week">ISO WEEK —</span></div>
+              <div class="calendar-wrap">
+                <div id="week-column" class="week-column" aria-hidden="true"></div>
+                <div id="calendar" class="calendar-grid" role="grid" aria-label="Month calendar"></div>
+              </div>
+              <div class="screen-footer"><span id="month-summary">31 days · 5 rows</span><span>GREGORIAN / DATE ONLY</span></div>
+            </div>
+            <div class="hardware-controls" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+          <p class="device-caption">Illustrative e-paper interface. It is not a photograph or a hardware test.</p>
+        </section>
+
+        <aside class="resource-panel" aria-labelledby="resource-title">
+          <p class="eyebrow">PRINTABLE COMPANION</p>
+          <h2 id="resource-title">Continue on paper</h2>
+          <p id="resource-copy">Choose a month in the verified reference window to open its printable calendar.</p>
+          <div id="resource-action" class="resource-action" aria-live="polite"></div>
+          <div class="resource-links">
+            <a href="https://www.betacalendars.com/monthly-calendar" target="_blank" rel="noopener noreferrer">Monthly calendar collection <span>↗</span></a>
+            <a href="https://www.betacalendars.com/blank-calendar" target="_blank" rel="noopener noreferrer">Blank calendar templates <span>↗</span></a>
+            <a href="https://www.betacalendars.com/weekly-calendar" target="_blank" rel="noopener noreferrer">Weekly calendars <span>↗</span></a>
+          </div>
+          <p class="small-note">Beta Calendars publishes the printable references. Month pages are evergreen URLs; the year match is confirmed in the manifest before a link is shown.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sequence" aria-labelledby="sequence-title">
+      <div><p class="eyebrow">VERIFIED RESOURCE WINDOW</p><h2 id="sequence-title">October 2026 — September 2027</h2></div>
+      <p>Each month opens its own direct printable page. October–December 2027 are intentionally not mapped to the 2026 references.</p>
+      <div id="sequence" class="sequence-grid"></div>
+    </section>
+    <section class="notes">
+      <div><p class="eyebrow">HOW TO TRY IT</p><h2>Navigate without losing the date model.</h2></div>
+      <ul>
+        <li>Use the arrows to change month; use the controls to change year and week origin.</li>
+        <li>Keyboard: ←/→ changes month, ↑/↓ changes year, and W toggles Monday/Sunday start.</li>
+        <li>ISO week labels follow ISO 8601 and can belong to the adjacent week-year.</li>
+        <li>The embedded device runs its date engine offline. NTP and a valid optional RTC only provide time-of-day.</li>
+      </ul>
+    </section>
+  </main>
+  <footer><span>CHRONOPAPER / OPEN SOURCE HARDWARE + SOFTWARE</span><a href="https://www.betacalendars.com/" target="_blank" rel="noopener noreferrer">About Beta Calendars ↗</a></footer>
+</body>
+</html>
